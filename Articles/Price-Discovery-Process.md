@@ -38,7 +38,7 @@ $$
 
 Given this  setup, we can start analying how order flow affects a market maker's quotes. We start with the following dynamic. 
 $$
-\begin{*align}
+\begin{align}
 a_t & = V_t^+ = E(V|d_t = +1) \\
 b_t & = V_t^- = E(V|d_t = -1)
 \end{*align}
@@ -49,10 +49,10 @@ Where $a_t$ and $b_t$ reflect the Ask and Bid respectively, and $d_t$ represents
 We start by looking at the conditional probability that the fair value of the security is $V_H$ given that we see a Buy order.
 
 $$
-\begin{*align}
+\begin{align}
 P(d_t = 1 | V_H) &= P(d_t=1 | V_H, \text{informed trade})P(\text{informed trade}) \\
 &+(d_t=1 | V_H, \text{liqudity trade})P(\text{liquidity trade})\\
 &= 1*\pi + \frac{1-\pi}{2}\\
 &= \frac{1+\pi}{2}\\
-\end{*align}
+\end{align}
 $$
