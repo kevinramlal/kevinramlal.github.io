@@ -41,7 +41,7 @@ $$
 \begin{align}
 a_t & = V_t^+ = E(V|d_t = +1) \\
 b_t & = V_t^- = E(V|d_t = -1)
-\end{*align}
+\end{align}
 $$
 
 Where $a_t$ and $b_t$ reflect the Ask and Bid respectively, and $d_t$ represents the direction of an order, where +1 represents a *Buy* and -1. Here we see that the ask represents the market maker's expected fair value of the security, given that they reveived a buy order, and vice-versa for the bid. Let's look at finding closed form representations of these expected values. 
