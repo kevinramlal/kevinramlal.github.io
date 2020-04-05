@@ -34,7 +34,9 @@ $$V_0 =  \theta V_H+ (1-\theta) V_L$$.
 8. Regardless of fair value, a liquidity trader will buy and sell with probability 0.5.
 
 Right away, we can glean some useful dynamics! 
+$$
 \begin{align}
 a_t & = V_t^+ = E(V|d_t = +1) \\\\
 a_t & = V_t^+ = E(V|d_t = +1)
 \end{align}
+$$
