@@ -1,5 +1,6 @@
 ---
 layout: default
+mathjax: true
 ---
 [Kevin Ramlal Homepage](https://kevinramlal.github.io)
 
