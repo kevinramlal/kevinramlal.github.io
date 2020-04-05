@@ -19,24 +19,39 @@ We start with a simple framework, as follows:
 
 2. Currently,before any market orders are observed, it is trading at $V_0$ which is the expected value computed as follows:
 
-$$V_0 =  \theta V_H+ (1-\theta) V_L$$.
-
-3. We see that depeding on $\theta$, $V_L \leq V_0 \leq V_H$.
-
-4. Market Orders arrive one at a time.
- 
-5. There are two types of traders placing these orders, an *informed trader* who knows what the true value of the security, and a *liqudity trader* who has no knowledge of the true value.
-
-6. The probability that any given order comes from an informed trader is $\pi$ and coversely the probability that any given order froms a liquidity trader is $1-\pi$. 
-
-7. If the fair value of the security is $V_H$, the informed trader will buy with probabililty 1, and sell with probability 0 (and vice-versa if the price of the security is $V_L$.)
- 
-8. Regardless of fair value, a liquidity trader will buy and sell with probability 0.5.
-
-Right away, we can glean some useful dynamics! 
 $$
 \begin{align}
-a_t & = V_t^+ = E(V|d_t = +1) \\\\
-a_t & = V_t^+ = E(V|d_t = +1)
+V_0 =  \theta V_H+ (1-\theta) V_L
+\end{align}$$.
+
+3. There will be a single order for one share that will arrive at time *t*. This sort of setup is used in various *One Period Models*
+ 
+4. There are two types of traders placing these orders, an *informed trader* who knows what the true value of the security, and a *liqudity trader* who has no knowledge of the true value.
+
+5. The probability that any given order comes from an informed trader is $\pi$ and coversely the probability that any given order froms a liquidity trader is $1-\pi$. 
+
+6. If the fair value of the security is $V_H$, the informed trader will buy with probabililty 1, and sell with probability 0 (and vice-versa if the price of the security is $V_L$.)
+ 
+7. Regardless of fair value, a liquidity trader will buy and sell with probability 0.5.
+
+8. You are the market maker responsible for quoting the bid and the ask prices. Furthermore you are *risk neutral*
+
+Given this  setup, we can start analying how order flow affects a market maker's quotes. We start with the following dynamic. 
+$$
+\begin{align}
+a_t & = V_t^+ = E(V|d_t = +1) \\
+b_t & = V_t^- = E(V|d_t = -1)
+\end{align}
+$$
+Where $a_t$ and $b_t$ reflect the Ask and Bid respectively, and $d_t$ represents the direction of an order, where +1 represents a *Buy* and -1. Here we see that the ask represents the market maker's expected fair value of the security, given that they reveived a buy order, and vice-versa for the bid. Let's look at finding closed form representations of these expected values. 
+
+We start by looking at the conditional probability that the fair value of the security is $V_H$ given that we see a Buy order.
+
+$$
+\begin{align}
+P(d_t = 1 | V_H) &= P(d_t=1 | V_H, \text{informed trade})P(\text{informed trade}) \\
+&+(d_t=1 | V_H, \text{liqudity trade})P(\text{liquidity trade})\\
+&= 1*\pi + \frac{1-\pi}{2}\\
+&= \frac{1+\pi}{2}
 \end{align}
 $$
