@@ -23,7 +23,6 @@ $$
 V_0 &=  \theta V_H+ (1-\theta) V_L
 \end{align}
 $$
-
 3. There will be a single order for one share that will arrive at time *t*. This sort of setup is used in various *One Period Models*
  
 4. There are two types of traders placing these orders, an *informed trader* who knows what the true value of the security, and a *liqudity trader* who has no knowledge of the true value.
