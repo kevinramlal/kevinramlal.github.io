@@ -38,20 +38,20 @@ V_0 =  \theta V_H+ (1-\theta) V_L
 
 Given this  setup, we can start analying how order flow affects a market maker's quotes. We start with the following dynamic. 
 $$
-\begin{align}
+\begin{*align}
 a_t & = V_t^+ = E(V|d_t = +1) \\
 b_t & = V_t^- = E(V|d_t = -1)
-\end{align}
+\end{*align}
 $$
 Where $a_t$ and $b_t$ reflect the Ask and Bid respectively, and $d_t$ represents the direction of an order, where +1 represents a *Buy* and -1. Here we see that the ask represents the market maker's expected fair value of the security, given that they reveived a buy order, and vice-versa for the bid. Let's look at finding closed form representations of these expected values. 
 
 We start by looking at the conditional probability that the fair value of the security is $V_H$ given that we see a Buy order.
 
 $$
-\begin{align}
+\begin{*align}
 P(d_t = 1 | V_H) &= P(d_t=1 | V_H, \text{informed trade})P(\text{informed trade}) \\
 &+(d_t=1 | V_H, \text{liqudity trade})P(\text{liquidity trade})\\
 &= 1*\pi + \frac{1-\pi}{2}\\
 &= \frac{1+\pi}{2}
-\end{align}
+\end{*align}
 $$
