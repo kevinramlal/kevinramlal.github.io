@@ -17,10 +17,8 @@ We start with a simple framework, as follows:
 1. There is a single security that has a fair value of one of two possible values, $V_H$ with probability $\theta$ or $V_L$ with probability $(1-\theta)$ where $V_H > V_L$. 
 
 2. Currently,before any market orders are observed, it is trading at $V_0$ which is the expected value computed as follows:
-
-    $$V_0 =  \theta V_H+ (1-\theta) V_L$$.
-
-    We see that depeding on $\theta$, $V_L \leq V_0 \leq V_H$. 
+$$V_0 =  \theta V_H+ (1-\theta) V_L$$.
+We see that depeding on $\theta$, $V_L \leq V_0 \leq V_H$. 
 
 3. Market Orders arrive one at a time.
  
