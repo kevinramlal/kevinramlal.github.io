@@ -18,6 +18,7 @@ We start with a simple framework, as follows:
 1. There is a single security that has a fair value of one of two possible values, $V_H$ with probability $\theta$ or $V_L$ with probability $(1-\theta)$ where $V_H > V_L$. 
 
 2. Currently,before any market orders are observed, it is trading at $V_0$ which is the expected value computed as follows:
+
 $$
 \begin{align}
 V_0 =  \theta V_H+ (1-\theta) V_L
@@ -37,6 +38,7 @@ $$
 8. You are the market maker responsible for quoting the bid and the ask prices. Furthermore you are *risk neutral*
 
 Given this  setup, we can start analying how order flow affects a market maker's quotes. We start with the following dynamic. 
+
 $$
 \begin{align}
 a_t & = V_t^+ = E(V|d_t = +1) \\
