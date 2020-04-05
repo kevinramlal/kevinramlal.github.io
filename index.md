@@ -21,7 +21,7 @@ Throughout this article series I hope to create a resource that I wish I had sev
 - Define Microstructure
 - Introducing the limit order book
 
-3. [Price Discovery](./Articles/3_Price_Discovery.html).
+3. [Price Discovery](./Articles/Price-Discovery-Process.md).
 - Glosten-Milgrom
 - Kyle
 - Ho Stoll 
