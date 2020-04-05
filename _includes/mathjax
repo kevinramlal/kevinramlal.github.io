@@ -19,4 +19,4 @@
   src="https://vincenttam.github.io/javascripts/MathJaxLocal.js"
 >
 </script>
-{% endif 
+{% endif %}
