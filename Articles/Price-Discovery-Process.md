@@ -50,8 +50,8 @@ Where $a_t$ and $b_t$ reflect the Ask and Bid respectively, and $d_t$ represents
 We start by looking at the conditional probability that the fair value of the security is $V_H$ given that we see a Buy order.
 $$
 \begin{align*}
-P(d_t = 1 | V_H) &= P(d_t=1 | V_H \union \text{Inf})P(\text{Inf}) \\
-&+(d_t=1 | V_H \union \text{Liq})P(\text{Liq})\\
+P(d_t = 1 | V_H) &= P(d_t=1 | V_H \cap \text{Inf})P(\text{Inf}) \\
+&+(d_t=1 | V_H \cap \text{Liq})P(\text{Liq})\\
 &= \pi + \frac{1-\pi}{2}\\
 &= \frac{1+\pi}{2}
 \end{align*}
