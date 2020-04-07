@@ -20,7 +20,7 @@ We start with a simple framework, as follows:
 2. Currently,before any market orders are observed, it is trading at $V_0$ which is the expected value computed as follows:
 $$
 \begin{align*}
-V_0 &=  \theta V_H+ (1-\theta) V_L
+V_0 &=  \theta V_H+ (1-\theta) V_L\\
 \end{align*}
 $$
 3. There will be a single order for one share that will arrive at time *t*. This sort of setup is used in various *One Period Models*
