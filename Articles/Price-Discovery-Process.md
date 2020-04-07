@@ -57,6 +57,6 @@ P(d_t = 1 | V_H) &= P(d_t=1 | V_H, \text{informed trade})P(\text{informed trade}
 \end{align*}
 $$
 
-Following a similiar computation, we see that the probability of a Buy order given that the fair value is $V_L$ is just $P(d_t = 1 | V_L) = \frac{1-\pi}{2}$ since the probability that the informed trader buys when the fair value is $V_l$ is simply 0. This simple relationship engenders an import fact about this model, and one that has strong real world implications.
+Following a similiar computation, we see that the probability of a Buy order given that the fair value is $V_L$ is just $P(d_t = 1 | V_L)=\frac{1-\pi}{2}$ since the probability that the informed trader buys when the fair value is $V_l$ is simply 0. This simple relationship engenders an import fact about this model, and one that has strong real world implications.
 
 **Order flow has a positive correlation with value.** This means that if we see a sequence of Buys, the fair value of a security is more likely to be higher than its current value. Conversly, we expect a lower fair value given we observe a sequence of sell orders. 
