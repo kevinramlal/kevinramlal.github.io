@@ -51,7 +51,7 @@ We start by looking at the conditional probability that the fair value of the se
 $$
 \begin{align*}
 P(d_t = 1 | V_H) &= P(d_t=1 | V_H \union \text{Inf})P(\text{Inf}) \\
-&+(d_t=1 | V_H \union \text{Liq})P(\text{Liq)\\
+&+(d_t=1 | V_H \union \text{Liq})P(\text{Liq})\\
 &= \pi + \frac{1-\pi}{2}\\
 &= \frac{1+\pi}{2}
 \end{align*}
