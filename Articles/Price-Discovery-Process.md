@@ -48,11 +48,10 @@ $$
 Where $a_t$ and $b_t$ reflect the Ask and Bid respectively, and $d_t$ represents the direction of an order, where +1 represents a *Buy* and -1. Here we see that the ask represents the market maker's expected fair value of the security, given that they reveived a buy order, and vice-versa for the bid. Let's look at finding closed form representations of these expected values. 
 
 We start by looking at the conditional probability that the fair value of the security is $V_H$ given that we see a Buy order.
-
 $$
 \begin{align*}
-P(d_t = 1 | V_H) &= P(d_t=1 | V_H, \text{Inf})P(\text{Inf}) \\
-&+(d_t=1 | V_H, \text{Liq})P(\text{Liq)\\
+P(d_t = 1 | V_H) &= P(d_t=1 | V_H \union \text{Inf})P(\text{Inf}) \\
+&+(d_t=1 | V_H \union \text{Liq})P(\text{Liq)\\
 &= \pi + \frac{1-\pi}{2}\\
 &= \frac{1+\pi}{2}
 \end{align*}
@@ -73,8 +72,8 @@ Suppose that an Buy order is sent in, getting executed at the market-maker's Ask
 
 $$
 \begin{align*}
-E(\text{Prof}_B) &= E(\text{Prof}_B | \text{Inf})P(text{Inf}) + E(\text{Prof}_B | \text{Liq})P(\text{Liq}) \\
-&= \theta \pi (a_t - V_H) + \frac{1/2}(1-\pi) (a_t - V_0)\\
+E(\text{Prof}_B) &= E(\text{Prof}_B | \text{Inf})P(\text{Inf}) + E(\text{Prof}_B | \text{Liq})P(\text{Liq}) \\
+&= \theta \pi (a_t - V_H) + \frac{1}{2}(1-\pi) (a_t - V_0)\\
 \end{align*}
 $$
 
