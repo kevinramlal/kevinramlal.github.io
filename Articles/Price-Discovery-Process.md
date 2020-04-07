@@ -7,7 +7,7 @@ mathjax: true
 
 #  Price Discovery Process 
 *Price discovery is the process in which a securities' price is determined through the interactions and mechanisms in a marketplace.* 
-
+---
 There are several important models in the price discovery process - each with varying levels of complexity as well as specific sets of assumptions. While these models may be a far cry from the complexity of real-world trading, studying the behavior of prices in these models help traders better understand the markets in which they trade. In this article I hope to outline several of the canonical models used through literature - and perhaps provide some insight as to why these models can be useful in real applications. 
 
 ### 1. Glosten Milgrom (1985)
@@ -56,3 +56,7 @@ P(d_t = 1 | V_H) &= P(d_t=1 | V_H, \text{informed trade})P(\text{informed trade}
 &= \frac{1+\pi}{2}
 \end{align*}
 $$
+
+Following a similiar computation, we see that the probability of a Buy order given that the fair value is $V_L$ is just $P(d_t = 1 | V_L) = \frac{1-\pi}{2}$ since the probability that the informed trader buys when the fair value is $V_l$ is simply 0. This simple relationship engenders an import fact about this model, and one that has strong real world implications.
+
+**Order flow has a positive correlation with value.** This means that if we see a sequence of Buys, the fair value of a security is more likely to be higher than its current value. Conversly, we expect a lower fair value given we observe a sequence of sell orders. 
