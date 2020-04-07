@@ -51,16 +51,16 @@ We start by looking at the conditional probability that the fair value of the se
 
 $$
 \begin{align*}
-P(d_t = 1 | V_H) &= P(d_t=1 | V_H, \text{informed trade})P(\text{informed trade}) \\
-&+(d_t=1 | V_H, \text{liqudity trade})P(\text{liquidity trade})\\
-&= 1*\pi + \frac{1-\pi}{2}\\
+P(d_t = 1 | V_H) &= P(d_t=1 | V_H, \text{Inf})P(\text{Inf}) \\
+&+(d_t=1 | V_H, \text{Liq})P(\text{Liq)\\
+&= \pi + \frac{1-\pi}{2}\\
 &= \frac{1+\pi}{2}
 \end{align*}
 $$
 
 Following a similiar computation, we see that the probability of a Buy order given that the fair value is $V_L$ is just 
 $$\begin{align*}
-P(d_t = 1  V_L)=\frac{1-\pi}{2} 
+P(d_t = 1 | V_L)=\frac{1-\pi}{2} 
 \end{align*}$$ since the probability that the informed trader buys when the fair value is $V_l$ is simply 0. This simple relationship engenders an import fact about this model, and one that has strong real world implications.
 
 **Order flow has a positive correlation with value.** This means that if we see a sequence of Buys, the fair value of a security is more likely to be higher than its current value. Conversly, we expect a lower fair value given we observe a sequence of sell orders. 
@@ -70,9 +70,10 @@ P(d_t = 1  V_L)=\frac{1-\pi}{2}
 Now that we know order flow is possitively correlated with value, how can market-maker's use this information to determine their bid-ask quote? I turn your attention back to point 8 in our framework setup where we specified that the marker-maker's are risk neutral. This means that the market-makers expects to break-even, i.e make 0 profit, on average! 
 
 Suppose that an Buy order is sent in, getting executed at the market-maker's Ask quote. Either this buy was sent by an informed trader in which the market-maker can expect to lose $a_t - V_H$, since the informed trader would only buy if the fair value was $V_H$. On the other hand, if this buy order was sent in by a liquidity trader, , then the market-maker doesn't gain any more insight as to whether the fair is $V_H$ or $V_L$, so on average they can expect to make $a_t - V_0$ off of liquidity traders. The expected profit gained from trading with liquidity traders needs to offset the expected losses from trading with informed traders. Using this, we can find a closed form solution for $a_t$. In the below prood, let $E(\text{Prof}_B)$ be the expected value for profit given a buy order, $\text{Inf}$ represent informed trade, $\text{Liq}$ represent liquidity.
+
 $$
 \begin{align*}
-E(\text{Prof}_B) &= E(\text{Prof}_B | \text{Inf})P(text{Inf}) + E(\text{Prof}_B | \text{Liq})P(text{Liq}) \\
+E(\text{Prof}_B) &= E(\text{Prof}_B | \text{Inf})P(text{Inf}) + E(\text{Prof}_B | \text{Liq})P(\text{Liq}) \\
 &= \theta \pi (a_t - V_H) + \frac{1/2}(1-\pi) (a_t - V_0)\\
 \end{align*}
 $$
@@ -83,6 +84,7 @@ $$
 a_t(\theta \pi + (1-\pi)\frac{1}{2}) &=  \theta \pi V_H + (1 - \pi)\frac{1}{2}V_0\\
 \end{align*}
 $$
+
 Now, there are alot of ways to rearrange the above to solve for $a_t$ but using some lookahead bias (since I know what closed form answer we hope to get), let's find an expression for $a_t$ that is in the form of $V_0 + \text{some half-spread term}$. In the next stage of the proof, we make use of point 2 in our framework, where we stated $V_0 = \theta V_H + (1- \theta V_L)$
 
 $$
