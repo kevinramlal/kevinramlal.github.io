@@ -10,7 +10,7 @@ mathjax: true
 
 There are several important models in the price discovery process - each with varying levels of complexity as well as specific sets of assumptions. While these models may be a far cry from the complexity of real-world trading, studying the behavior of prices in these models help traders better understand the markets in which they trade. In this article I hope to outline several of the canonical models used through literature - and perhaps provide some insight as to why these models can be useful in real applications. 
 
-### 1. Glosten Milgrom (1985)
+## Glosten Milgrom (1985)
 
 We start with a simple framework, as follows:
 
@@ -33,8 +33,9 @@ $$
  
 7. Regardless of fair value, a liquidity trader will buy and sell with probability 0.5.
 
-8. You are the market maker responsible for quoting the bid and the ask prices. Furthermore you are *risk neutral*
+8. The market maker responsible for quoting the bid and the ask prices is *risk neutral*
 
+#### Order Flow and Fair Value
 Given this  setup, we can start analying how order flow affects a market maker's quotes. We start with the following dynamic. 
 
 $$
@@ -57,8 +58,40 @@ P(d_t = 1 | V_H) &= P(d_t=1 | V_H, \text{informed trade})P(\text{informed trade}
 \end{align*}
 $$
 
-Following a similiar computation, we see that the probability of a Buy order given that the fair value is $V_L$ is just $$P(d_t = 1 | V_L)=\frac{1-\pi}{2}$$ since the probability that the informed trader buys when the fair value is $V_l$ is simply 0. This simple relationship engenders an import fact about this model, and one that has strong real world implications.
+Following a similiar computation, we see that the probability of a Buy order given that the fair value is $V_L$ is just 
+$$\begin{align*}
+P(d_t = 1  V_L)=\frac{1-\pi}{2} 
+\end{align*}$$ since the probability that the informed trader buys when the fair value is $V_l$ is simply 0. This simple relationship engenders an import fact about this model, and one that has strong real world implications.
 
 **Order flow has a positive correlation with value.** This means that if we see a sequence of Buys, the fair value of a security is more likely to be higher than its current value. Conversly, we expect a lower fair value given we observe a sequence of sell orders. 
 
-## Finding the Bid-Ask Spread from the Glosten Milgrom Model. 
+#### Finding the Bid-Ask Spread from the Glosten Milgrom Model. 
+
+Now that we know order flow is possitively correlated with value, how can market-maker's use this information to determine their bid-ask quote? I turn your attention back to point 8 in our framework setup where we specified that the marker-maker's are risk neutral. This means that the market-makers expects to break-even, i.e make 0 profit, on average! 
+
+Suppose that an Buy order is sent in, getting executed at the market-maker's Ask quote. Either this buy was sent by an informed trader in which the market-maker can expect to lose $a_t - V_H$, since the informed trader would only buy if the fair value was $V_H$. On the other hand, if this buy order was sent in by a liquidity trader, , then the market-maker doesn't gain any more insight as to whether the fair is $V_H$ or $V_L$, so on average they can expect to make $a_t - V_0$ off of liquidity traders. The expected profit gained from trading with liquidity traders needs to offset the expected losses from trading with informed traders. Using this, we can find a closed form solution for $a_t$. In the below prood, let $E(\text{Prof}_B)$ be the expected value for profit given a buy order, $\text{Inf}$ represent informed trade, $\text{Liq}$ represent liquidity.
+$$
+\begin{align*}
+E(\text{Prof}_B) &= E(\text{Prof}_B | \text{Inf})P(text{Inf}) + E(\text{Prof}_B | \text{Liq})P(text{Liq}) \\
+&= \theta \pi (a_t - V_H) + \frac{1/2}(1-\pi) (a_t - V_0)\\
+\end{align*}
+$$
+
+Setting the expected profit to 0, and rearranging we find the following. 
+$$
+\begin{align*}
+a_t(\theta \pi + (1-\pi)\frac{1}{2}) &=  \theta \pi V_H + (1 - \pi)\frac{1}{2}V_0\\
+\end{align*}
+$$
+Now, there are alot of ways to rearrange the above to solve for $a_t$ but using some lookahead bias (since I know what closed form answer we hope to get), let's find an expression for $a_t$ that is in the form of $V_0 + \text{some half-spread term}$. In the next stage of the proof, we make use of point 2 in our framework, where we stated $V_0 = \theta V_H + (1- \theta V_L)$
+
+$$
+\begin{align*}
+a_t(\theta \pi + (1-\pi)\frac{1}{2}) &=  \theta \pi V_H + (1 - \pi)\frac{1}{2}V_0\\
+&= \theta \pi V_H + (1 - \pi)\frac{1}{2})V_0 + \theta \pi V_H  - \theta \pi V_H\\
+&= \theta \pi (V_H - V_0)+ (\theta \pi + (1 - \pi)\frac{1}{2})V_0 \\
+a_t &= V_0 + \frac{\theta \pi}{\theta \pi + (1-\pi)\frac{1}{2}} (V_H - V_0)\\
+&= V_0 + \frac{\theta \pi}{\theta \pi + (1-\pi)\frac{1}{2}} (V_H - \theta V_H + (1-\theta)V_L)\\
+a_t &= V_0 + \frac{\theta \pi (1 - \theta)}{\theta \pi + (1-\pi)\frac{1}{2}} (V_H - V_L)\\
+\end{align*}
+$$
