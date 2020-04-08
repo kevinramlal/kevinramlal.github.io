@@ -1,7 +1,8 @@
 title: Kevin Ramlal
 logo: /92507994_1458761130969955_2416489870793900032_n.jpg
-description: Kevin
+description: A Personal Website
 show_downloads: true
 google_analytics:
 markdown: kramdown
 theme: jekyll-theme-minimal
+roadmaplogo: /road.jpg
