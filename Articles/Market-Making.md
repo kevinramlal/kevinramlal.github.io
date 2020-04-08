@@ -20,7 +20,8 @@ A market, very simply, is a space where goods are bought and sold. To "make a ma
 
 A few years ago I watched this video posted by Citadel Securities, one of the world's largest market-maker, which gave me immense clarity on what is market making, and pointed me in the right direction to start thinking about the topic further.
 
-https://www.youtube.com/watch?time_continue=7&v=KsKsyW5vp6A&feature=emb_title
+[![Citadel Securities - What is a Market Making?](https://img.youtube.com/vi/KsKsyW5vp6A/0.jpg)](https://youtu.be/KsKsyW5vp6A)
+
 
 Quick recap, now speeding up to world of financial markets. A market maker is an intermediary who facilitates the buying and selling of a security by quoting prices, and volumes, at which they are willing to buy and sell this security at. This serves a convenient purpose of circumventing the issue of buyers having to find specific sellers, and vice-versa. Instead, transactions are centralized around market-makers. Sellers can quickly get rid of their inventory by selling it to the market makers, and similarly buyers can quickly purchase inventory.
 
@@ -35,12 +36,15 @@ A quick thought experiment: 
 Setup:
 You are able to buy and sell stocks without transaction fees (fees for your online brokerage account).
 You will orders will be executed immediately (filled). 
-The current quote for stock XYZ is Last: \$ 100.00 | Bid: \$ 99.95 | Ask: \$ 100.05
+The current quote for stock XYZ is Last: \$ 100.00 , Bid: \$ 99.95 , Ask: \$ 100.05
 
 Now, you are going to buy stock XYZ, and immediately sell it. When you buy the stock, you pay the Ask. Now, upon immediately selling the stock, you receive the Bid. A quick P/L calc: $(100.05) + 99.95 = (0.10)$
-For buying and selling stock XYZ immediately, a seemingly harmless event where you start with zero position, and end with zero position, you have paid \$ 0.10!
-This is what is called the Spread, and this is the main way in which market makers are compensated for facilitating the buying and selling of securities. More formally, the Spread is the defined as the difference between the Ask and the Bid. Since the Ask is normally higher than the Bid, the spread is typically positive. As a quick rule of thumb for remembering which one you pay/receive when trading, you will always PAY (buy at) the higher price. 
+For buying and selling stock XYZ immediately, a seemingly harmless event where you start with zero position, and end with zero position, you have paid \$ 0.10.
+
+This is what is called the Spread, and this is the main way in which market makers are compensated for facilitating the buying and selling of securities. More formally, the Spread is the defined as the difference between the Ask and the Bid. Since the Ask is normally higher than the Bid, the spread is typically positive. As a quick rule of thumb for remembering which one you pay/receive when trading, you will always PAY (buy at) the higher price.
+ 
 So how do market makers make money off of the Spread? Specifically, the mechanics of our thought experiment are reversed for market makers, meaning that they receive the Ask and pay the Bid, resulting in a profit of \$ 0.10 from doing the exact actions as above. Now, at first it seems like market-makers can NEVER lose money! However, there are a variety of risks that market makers take on for doing this. Further, it's import to understand HOW market makers are able to receive this spread, and how this spread is created in the first place. 
 
 Now that we have a base understanding of what a market maker is and how they make money, we need to understand more about the mechanics of the markets we operate in. There a lot of thought avenues to embark on next, but I believe the most sensible next step is to dissect what is known as liquidity, as this concept captures MUCH of what drives markets and the field of market making, yet is something that isn't always spoken about. 
-Next Article: 02 | Introduction to Liquidity and Microstructure
+
+Photo Source: https://www.sciencephoto.com/media/695719/view/amsterdam-stock-exchange-illustration
