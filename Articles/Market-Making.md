@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_articles
 mathjax: true
 ---
 [Kevin Ramlal Homepage](https://kevinramlal.github.io)
