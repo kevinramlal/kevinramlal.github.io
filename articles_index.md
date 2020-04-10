@@ -16,7 +16,7 @@ Throughout this article series I hope to create a resource that I wish I had sev
 
 1. [What is a Market Maker?](./Articles/Market-Making.md)
 
-2. Test
+2. [Introduction to Liquidity and Market Microstructure](./Articles/liquidity.md)
 - Define Liquidity, and why it's important
 - Define Microstructure
 - Introducing the limit order book
