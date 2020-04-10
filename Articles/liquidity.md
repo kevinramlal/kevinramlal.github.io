@@ -1,7 +1,7 @@
 ---
 layout: default_articles
 ---
-[Roadmap Homepage](https://kevinramlal.github.io/articles_index.html)
+[Roadmap Homepage](https://kevinramlal.github.io)
 
 ## Introduction to Liquidity and Market Microstructure 
 Liquidity is the ability to buy and sell securities quickly, and relatively small price impact. 

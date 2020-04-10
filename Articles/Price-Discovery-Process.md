@@ -2,7 +2,7 @@
 layout: default_articles
 mathjax: true
 ---
-[Roadmap Homepage](https://kevinramlal.github.io/articles_index.html)
+[Roadmap Homepage](https://kevinramlal.github.io)
 
 
 #  Price Discovery Process 
