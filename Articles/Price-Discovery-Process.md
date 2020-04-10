@@ -2,7 +2,7 @@
 layout: default_articles
 mathjax: true
 ---
-[Roadmap Homepage](articles_index.md)
+[Roadmap Homepage](../articles_index.md)
 
 
 #  Price Discovery Process 
