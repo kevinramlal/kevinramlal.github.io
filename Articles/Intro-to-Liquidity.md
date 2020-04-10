@@ -7,7 +7,7 @@ layout: default_articles
 Liquidity is the ability to buy and sell securities quickly, and relatively small price impact. 
 
 <p align="center">
-  <img width="900" height="400" src="bluffs_better.jpg">
+  <img width="460" height="300" src="bluffs_better.jpg">
 </p>
 
 I start off with a strange tale that a wise colleague once shared with me. 
