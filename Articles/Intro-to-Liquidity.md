@@ -7,7 +7,7 @@ layout: default_articles
 Liquidity is the ability to buy and sell securities quickly, and relatively small price impact. 
 
 <p align="center">
-  <img width="460" height="300" src="bluffs_better.jpg">
+  <img width="460" height="300" src="great_wave.png">
 </p>
 
 I start off with a strange tale that a wise colleague once shared with me. 
@@ -81,3 +81,6 @@ $$
 
 Where $p_j$ represents the jth transaction.This measure is essentially an empirical estimate of the bid-ask spread based on trade data. The larger the measure, the larger the bid-ask spread estimate, and thus is a sign of illiquidity. 
 
+
+#### Picture
+The Great Wave off the Coast of Kanagawa - Katsushika Hokusai (1831)
