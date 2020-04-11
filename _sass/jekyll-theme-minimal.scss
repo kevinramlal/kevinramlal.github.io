@@ -37,12 +37,13 @@ h3, h4, h5, h6 {
 a {
   color:#267CB9;
   text-decoration:none;
-  text-align:center
+  text-align:center;
 }
 
 a:hover, a:focus {
   color:#069;
   font-weight: bold;
+  text-align:center;
 }
 
 a small {
@@ -50,10 +51,12 @@ a small {
   color:#777;
   margin-top:-0.3em;
   display:block;
+  text-align:center;
 }
 
 a:hover small {
   color:#777;
+  text-align:center;
 }
 
 .wrapper {
