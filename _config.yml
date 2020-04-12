@@ -5,5 +5,5 @@ show_downloads: true
 google_analytics:
 markdown: kramdown
 theme: jekyll-theme-minimal
-roadmaplogo: /road.jpg
+roadmaplogo: /road1.png
 qbooklogo: /qbooklogo.jpg
