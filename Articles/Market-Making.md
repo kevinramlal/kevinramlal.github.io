@@ -7,9 +7,9 @@ mathjax: true
 
 # What Is A Market Maker?
 A market maker is an intermediary who facilitates the buying and selling of a security by quoting the prices and volumes at which they are willing to buy and sell this security at.
-<p align="center">
-  <img width="460" height="300" src="amsterdam.jpg">
-</p>
+
+![Canyon](amsterdam2.jpg)
+*Claude Money, Canal in Amsterdam (1874)*
 
 
 If someone were to ask you, "What is a runner?" you can go down two paths in your response. The first would be to give a very thoughtful answer about a person who conducts a physical activity that ranges from casual exercise to professional level marathons. The second would be "A runner is one who runs."

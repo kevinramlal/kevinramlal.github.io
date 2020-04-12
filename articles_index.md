@@ -20,7 +20,7 @@ layout: default_articles
 - Ho Stoll 
 - Amihud-Medelson
 
-4. Limit Order Book Dynamics and Execution Strategies
+4. [Introduction to Limit Order Books](./Articles/intro-to-lob.md)
 - Depth
 - Imbalance
 - Almgren and Chriss

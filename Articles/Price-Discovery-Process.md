@@ -9,9 +9,8 @@ mathjax: true
 
 ![CHECKERS](checkers.jpg)
 *Checkers - Normal Rockwell (1928)*
+---
 
-
-___
 There are several important models in the price discovery process - each with varying levels of complexity as well as specific sets of assumptions. While these models may be a far cry from the complexity of real-world trading, studying the behavior of prices in these models help traders better understand the markets in which they trade. In this article I hope to outline several of the canonical models used through literature - and perhaps provide some insight as to why these models can be useful in real applications. 
 
 ## Glosten Milgrom (1985)
