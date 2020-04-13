@@ -13,9 +13,9 @@ mathjax: true
 
 A market maker is one who makes markets.
 
-To me, the more important question lies in understanding what it means to "make a market", or even further, "what is a market?".A market, very simply, is a place where goods are bought and sold. To "make a market" means to set the price at which you are willing to buy and sell said goods at. Thus, market-makers are people who make markets by setting these prices. (more on what these prices are later). The concept of market-making can be traced back to pre-modern era markets, where instead of company's stocks - the goods would be things like food or materials!
+To me, the more important question lies in understanding what it means to "make a market", or even further, "what is a market?". A market is a place where goods are bought and sold. To "make a market" means to provide the prices at which you are willing to buy and sell said goods at. Thus, market-makers are people who make markets by setting these prices. The concept of market-making can be traced back to pre-modern era markets, where instead of company's stocks - the goods would be things like food or materials! 
 
-A few years ago I watched this video posted by Citadel Securities, one of the world's largest market-maker, which gave me immense clarity on what is market making, and pointed me in the right direction to start thinking about the topic further.
+A few years ago I watched this video posted by Citadel Securities, one of the world's largest market-maker, which to this day, I still find to be one of the most clear videos on what market-making is. 
 
 [![Citadel Securities - What is a Market Making?](https://img.youtube.com/vi/KsKsyW5vp6A/0.jpg)](https://youtu.be/KsKsyW5vp6A)
 

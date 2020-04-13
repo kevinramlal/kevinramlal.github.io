@@ -36,7 +36,6 @@ Now that we have a qualitative understanding of liquidity, we seek to define liq
 - Quoted Spread
 - VWAP
 - Roll's Measure 
-- Price Impact Regression
 
 #### Quoted Spread
 The first method I introduce is by far the simplest, as well as one of the most intuitive. The Quoted Spread is simply the current spread divided by the mid-price
@@ -68,9 +67,8 @@ Once you have the VWAP, you can use this as a benchmark price - thus if your
 
 A metric based entirely on trade data, invented by Richard Roll in 1984 (reference). Roll exploits a concept known as the bid-ask bounce, which state that transactions bounce back and forth around the mid-quote by hitting the bid and ask prices randomly, resulting in negative serial correlation between transacted prices.
 
-<p align="center">
-  <img width="600" height="200" src="bid_ask_bounce.png">
-</p>
+![Bid-Ask Bounce](bid_ask_bounce.png)
+*Bid-Ask Bounce, Roll 1974*
 
 For a formal derivation, see FPR Chapter 2, or check out Roll's original publication. The Roll's Measure is as follows:
 $$
@@ -82,5 +80,12 @@ $$
 Where $p_j$ represents the jth transaction.This measure is essentially an empirical estimate of the bid-ask spread based on trade data. The larger the measure, the larger the bid-ask spread estimate, and thus is a sign of illiquidity. 
 
 
-#### Picture
+## Introducing Microstructure
 
+In her canonical book, "Market Microstructure Theory", Maureen O'Hara describes market microstructure as the following:
+
+ "Market microstructure is the study of the process and outcomes of exchanging assets under explicit trading rules."(Market Microstructure Theory, O'Hara) 
+
+ In essence, microstructure seeks to answer the question, "How is a price determined?". Economics usually look at borad themes such as supply and demand, and theorize the notion of an equilibrium price. Microstructure disects this idea, looking how exactly the equilibrium price is found through the individual transactions of buying and selling - and the specific mechanisms that allow these transactions. 
+
+ In the upcoming articles, we look at concepts in the price-discovery process, limit order books, and market making, keep in mind that all of these fall under the umbrella of market microstructure! 

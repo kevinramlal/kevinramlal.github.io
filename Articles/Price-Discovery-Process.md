@@ -11,7 +11,9 @@ mathjax: true
 *Checkers, Normal Rockwell (1928)*
 ---
 
-There are several important models in the price discovery process - each with varying levels of complexity as well as specific sets of assumptions. While these models may be a far cry from the complexity of real-world trading, studying the behavior of prices in these models help traders better understand the markets in which they trade. In this article I hope to outline several of the canonical models used through literature - and perhaps provide some insight as to why these models can be useful in real applications. 
+In the previous article about Liquidity and Microstructure, we introduced microstructure as the study of how prices are formed. The process of prices being formed is called the price-discovery process, and it is one of the main functions of a marketplace! What goes into the price discovery process in reality is incredibly complex, as it involves the minute details of specific exchanges, the type of traders who are trading, the availble public (or even private) news, and much more. 
+
+That being said, price discovery remains a key focus of academic literature that intersects economics and mathematics. There are several canonical models in the price discovery process - each with varying levels of complexity as well as specific sets of assumptions. While these models may be a far cry from the complexity of real-world trading, studying the behavior of prices in these models help traders better understand the markets in which they trade. In this article I hope to outline several of these models in varying levels of details, starting with the essential Glosten Milgrom Model. For this model, I will dive into the mathematical deriviations of key results. 
 
 ## Glosten Milgrom (1985)
 
@@ -101,6 +103,25 @@ a_t &= V_0 + \frac{\theta \pi (1 - \theta)}{\theta \pi + (1-\pi)\frac{1}{2}} (V_
 \end{align*}
 $$
 
+Similiarly, we can find a closed form solution for $b_t$ as:
 
-#### Picture
-Checkers - Normal Rockwell (1928)
+$$
+\begin{align*}
+b_t &= V_0 - \frac{\theta \pi (1 - \theta)}{\theta \pi + (1-\pi)\frac{1}{2}} (V_H - V_L)\\
+\end{align*}
+$$
+
+In the special case that we assign equal probabilty to $\V_H$ and $\V_L$, that is, $\theta = 0.5$ we can collapse the expressions for $a_t$ and $b_t$ as follows:
+
+$$
+\begin{align*}
+b_t &= V_0 - \frac{\pi}{2} (V_H - V_L)\\
+a_t &= V_0 + \frac{\pi}{2} (V_H - V_L)\\
+S_t &= (a_t - b_t) = \pi(V_H - V_L)
+\end{align*}
+$$
+
+Where S represents the spread. In conclusion, the Glosten-Milgrom model is a very simple, but powerful model that shows how one can go from a basic set of assumptions about the market maker and trader behaviour, and end with a closed form model to determine bids and asks! Next I will breifly outline a few more models that are much more complex, but will spare the mathematical derivations. If the Glosten Milgrom model was interesting, I urge you to check out Market Liquidity by Thierry Foucalt, Marco Pagaano, Ailsa Roell. 
+
+- Kyles Model 
+- 
