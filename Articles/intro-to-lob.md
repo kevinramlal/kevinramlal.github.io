@@ -8,7 +8,7 @@ mathjax: true
 *Limit Order Books (Order Books, or LOB) are collection of outstanding limit orders to buy and sell a security on a particular venue. The LOB plays a crucial role in the execution of trades, price-discovery, and is the centre of a variety of market-making strategies.*
 
 ![Canyon](canyon.jpg)
-*Thomas Moran, The Grand Canyon of the Yellowstone (1872)*
+*The Grand Canyon of the Yellowstone, Thomas Moran (1872)*
 
 
 In previous articles, we discussed the bid-ask spread, and how this spread is determed by the use of limit orders set by market-makers. Let's set up a quick example, stock XYZ has the current quote: MID: 100, BID: 99.99, ASK: 100.01. What's missing here is the volume available at the Bid, and Ask. In terms of limit-orders, let's assume there a limit-order to Buy 10 shares at a price of 99.99, and a limit-order to Sell 25 shares at a price of 100.01. We can represent this in a simple *limit order book* display as follows. 

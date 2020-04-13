@@ -9,7 +9,7 @@ mathjax: true
 *A market maker is an intermediary who facilitates the buying and selling of a security by quoting the prices and volumes at which they are willing to buy and sell this security at.*
 
 ![Canyon](amsterdam2.jpg)
-*Claude Money, Canal in Amsterdam (1874)*
+*Canal in Amsterdam, Claude Oscar Monet (1874)*
 
 A market maker is one who makes markets.
 
@@ -44,4 +44,4 @@ So how do market makers make money off of the Spread? Specifically, the mechanic
 
 Now that we have a base understanding of what a market maker is and how they make money, we need to understand more about the mechanics of the markets we operate in. There a lot of thought avenues to embark on next, but I believe the most sensible next step is to dissect what is known as liquidity, as this concept captures MUCH of what drives markets and the field of market making, yet is something that isn't always spoken about. 
 
-Photo Source: https://www.sciencephoto.com/media/695719/view/amsterdam-stock-exchange-illustration
+

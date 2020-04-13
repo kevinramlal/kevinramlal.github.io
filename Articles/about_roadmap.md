@@ -17,4 +17,5 @@ Cheers,
 
 Kevin
 
-![lighthouse](lighthouse.jpg)
+![newroad](new-road.jpg)
+*New Road, Grant Road (1939)*

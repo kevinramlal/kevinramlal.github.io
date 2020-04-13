@@ -7,7 +7,7 @@ layout: default_articles
 *Liquidity is the ability to buy and sell securities quickly, and relatively small price impact.*
 
 ![wave](wave.jpg)
-*The Great Wave off the Coast of Kanagawa - Katsushika Hokusai (1831)*
+*The Great Wave off the Coast of Kanagawa, Katsushika Hokusai (1831)*
 
 
 I start off with a strange tale that a wise colleague once shared with me. 
