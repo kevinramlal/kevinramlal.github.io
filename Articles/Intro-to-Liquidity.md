@@ -4,7 +4,7 @@ layout: default_articles
 [Roadmap Homepage](../articles_index.md)
 
 ## Introduction to Liquidity and Market Microstructure 
-*Liquidity is the ability to buy and sell securities quickly, and relatively small price impact. *
+*Liquidity is the ability to buy and sell securities quickly, and relatively small price impact.*
 
 ![wave](wave.jpg)
 *The Great Wave off the Coast of Kanagawa - Katsushika Hokusai (1831)*

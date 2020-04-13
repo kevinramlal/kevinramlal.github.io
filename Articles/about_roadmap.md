@@ -14,6 +14,7 @@ Ultimately, I hope to create a resource that I wish I myself had several years a
 It is my sincere hope that you find some usefulness in this work.
 
 Cheers,
-Kevin. 
+
+Kevin
 
 ![LH](lighthouse.jpg)

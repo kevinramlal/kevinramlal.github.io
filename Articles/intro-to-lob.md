@@ -5,7 +5,7 @@ mathjax: true
 [Roadmap Homepage](../articles_index.md)
 
 #  Introduction to Limit Order Books 
-*Limit Order Books (Order Books, or LOB) are collection of outstanding limit orders to buy and sell a security on a particular venue. The LOB plays a crucial role in the execution of trades, price-discovery, and is the centre of a variety of market-making strategies. *
+*Limit Order Books (Order Books, or LOB) are collection of outstanding limit orders to buy and sell a security on a particular venue. The LOB plays a crucial role in the execution of trades, price-discovery, and is the centre of a variety of market-making strategies.*
 
 ![Canyon](canyon.jpg)
 *Thomas Moran, The Grand Canyon of the Yellowstone (1872)*
