@@ -16,4 +16,4 @@ It is my sincere hope that you find some usefulness in this work.
 Cheers,
 Kevin. 
 
-![LH](./lighthouse.jpg)
+![LH](lighthouse.jpg)
