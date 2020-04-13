@@ -35,3 +35,12 @@ We can add this to our book as follows:
 |     20     |   99.98   |   100.02  |     10     |
 |     -     |   -  |   100.10  |     1     |
 
+
+### TODO
+1. Market Orders impact on the book - do a simple market order 
+2. Market Depth - Compute VWAP
+3. Market Imbalance - 
+4. Price Impact - buy large shares
+5. Relationship to Liquidity - tie back to liquidity 
+6. Queues and priorities
+7. 

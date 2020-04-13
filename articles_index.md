@@ -23,15 +23,19 @@ layout: default_articles
 4. [Introduction to Limit Order Books](./Articles/intro-to-lob.md)
 - Depth
 - Imbalance
+- Priorities
+
+5. Execution Strategies 
 - Almgren and Chriss
 - Guo 
 - VWAP
 - TWAP
 
-5. Mathematical Underpinnings of Market Making
+6. Mathematical Underpinnings of Market Making
 - Probability
+- Time Series
 - Control Theory
 
 
-6. Python simulation of a Market 
+7. Python simulation of a Market 
 Can we simulate a market + market maker

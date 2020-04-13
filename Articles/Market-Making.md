@@ -12,11 +12,9 @@ A market maker is an intermediary who facilitates the buying and selling of a se
 *Claude Money, Canal in Amsterdam (1874)*
 
 
-If someone were to ask you, "What is a runner?" you can go down two paths in your response. The first would be to give a very thoughtful answer about a person who conducts a physical activity that ranges from casual exercise to professional level marathons. The second would be "A runner is one who runs."
 A market maker is one who makes markets.
 
-While a slightly (or very) annoying answer, to me the more important question lies in understanding what it means to "make a market", or "what is a market?".
-A market, very simply, is a space where goods are bought and sold. To "make a market" means to set the price at which you are willing to buy and sell said goods at. Thus, market-makers are people who make markets by setting these prices. (more on what these prices are later). The concept of market-making can be traced back to pre-modern era markets, where instead of company's stocks - the goods would be things like food or materials!
+To me, the more important question lies in understanding what it means to "make a market", or even further, "what is a market?".A market, very simply, is a place where goods are bought and sold. To "make a market" means to set the price at which you are willing to buy and sell said goods at. Thus, market-makers are people who make markets by setting these prices. (more on what these prices are later). The concept of market-making can be traced back to pre-modern era markets, where instead of company's stocks - the goods would be things like food or materials!
 
 A few years ago I watched this video posted by Citadel Securities, one of the world's largest market-maker, which gave me immense clarity on what is market making, and pointed me in the right direction to start thinking about the topic further.
 
