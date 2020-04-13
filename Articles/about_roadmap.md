@@ -17,4 +17,4 @@ Cheers,
 
 Kevin
 
-![LH](lighthouse.jpg)
+![lighthouse](lighthouse.jpg)

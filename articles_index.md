@@ -8,11 +8,14 @@ layout: default_articles
 0. [Introducing the Roadmap](./Articles/about_roadmap.md)
 
 1. [What is a Market Maker?](./Articles/Market-Making.md)
+- The role of market makers in efficient markets
+- Transaction costs
+- Bid-Ask spreads
 
 2. [Introduction to Liquidity and Market Microstructure](./Articles/Intro-to-Liquidity.md)
-- Define Liquidity, and why it's important
-- Define Microstructure
-- Introducing the limit order book
+- Defining Liquidity and why it's important.
+- Defining Microstructure.
+
 
 3. [Introduction to Price Discovery](./Articles/Price-Discovery-Process.md).
 - Glosten-Milgrom
