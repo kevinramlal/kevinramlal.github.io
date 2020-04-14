@@ -19,26 +19,26 @@ layout: default_articles
 
 3. [Introduction to Price Discovery](./Articles/Price-Discovery-Process.md).
 - Glosten-Milgrom
-- Kyle
-- Ho Stoll 
+- Kyle (IPR)
+- Ho Stoll (IPR)
 - Amihud-Medelson
 
 4. [Introduction to Limit Order Books](./Articles/intro-to-lob.md)
 - Depth
 - Imbalance
-- Priorities
+- Queue Priorities
 
-5. Execution Strategies 
+5. Execution Strategies (IPR)
 - Almgren and Chriss
 - Guo 
 - VWAP
 - TWAP
 
-6. Mathematical Underpinnings of Market Making
+6. Mathematical Underpinnings of Market Making (IPR)
 - Probability
 - Time Series
 - Control Theory
 
 
-7. Python simulation of a Market 
-Can we simulate a market + market maker
+7. Python simulation of a Market (IPR)
+- Can we simulate a market + market maker

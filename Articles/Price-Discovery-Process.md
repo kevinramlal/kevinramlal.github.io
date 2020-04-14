@@ -9,7 +9,7 @@ mathjax: true
 
 ![CHECKERS](checkers.jpg)
 *Checkers, Normal Rockwell (1928)*
----
+
 
 In the previous article about Liquidity and Microstructure, we introduced microstructure as the study of how prices are formed. The process of prices being formed is called the price-discovery process, and it is one of the main functions of a marketplace! What goes into the price discovery process in reality is incredibly complex, as it involves the minute details of specific exchanges, the type of traders who are trading, the availble public (or even private) news, and much more. 
 
@@ -111,7 +111,7 @@ b_t &= V_0 - \frac{\theta \pi (1 - \theta)}{\theta \pi + (1-\pi)\frac{1}{2}} (V_
 \end{align*}
 $$
 
-In the special case that we assign equal probabilty to $\V_H$ and $\V_L$, that is, $\theta = 0.5$ we can collapse the expressions for $a_t$ and $b_t$ as follows:
+In the special case that we assign equal probabilty to $V_H$ and $V_L$, that is, $\theta = 0.5$ we can collapse the expressions for $a_t$ and $b_t$ as follows:
 
 $$
 \begin{align*}
@@ -121,7 +121,12 @@ S_t &= (a_t - b_t) = \pi(V_H - V_L)
 \end{align*}
 $$
 
-Where S represents the spread. In conclusion, the Glosten-Milgrom model is a very simple, but powerful model that shows how one can go from a basic set of assumptions about the market maker and trader behaviour, and end with a closed form model to determine bids and asks! Next I will breifly outline a few more models that are much more complex, but will spare the mathematical derivations. If the Glosten Milgrom model was interesting, I urge you to check out Market Liquidity by Thierry Foucalt, Marco Pagaano, Ailsa Roell. 
+Where S represents the spread. **In conclusion**, the Glosten-Milgrom model is a very simple, but powerful model that shows how one can go from a basic set of assumptions about the market maker and trader behaviour, and end with a closed form model to determine bids and asks! 
+-Write about what the equations mean at a high level
 
-- Kyles Model 
-- 
+Next I will breifly outline a few more models that are much more complex, but will spare the mathematical derivations. If the Glosten Milgrom model was interesting, I urge you to check out Market Liquidity by Thierry Foucalt, Marco Pagaano, Ailsa Roell. 
+
+- Kyles Model, description only 
+- Ho-Stoll description and result
+- Amihud Medelson
+- Inventory Models
