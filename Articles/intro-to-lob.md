@@ -49,7 +49,7 @@ $$
 \begin{align*}
 \text{Received from Market Sell} &= 10*(\$99.99) + 5*(\$99.98)\\
 &= \$1499.80\\\\
-\text{Price Per Share } &= \frac{1499.8}{15}\\
+\text{Received Per Share } &= \frac{1499.8}{15}\\
 &= \$99.987
 \end{align*}
 $$
@@ -92,7 +92,7 @@ $$
 &= \$100.015\\\\
 \text{Received for Sell} &= 20*(\$99.99) + 10*(\$99.98) + 10*(\$99.97) + 5*(\$99.96) + 5*(\$99.90)\\
 &= \$4998.60\\\\
-\text{Paid Per Share } &= \frac{4998.6}{50}\\
+\text{Received Per Share } &= \frac{4998.6}{50}\\
 &= \$99.972\\\\
 \text{Spread per Share} &= 100.015 - 99.972\\
 &= 0.043
