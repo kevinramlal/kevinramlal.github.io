@@ -90,7 +90,8 @@ $$
 &= \$5000.75\\\\
 \text{Paid Per Share } &= \frac{5000.75}{50}\\
 &= \$100.015\\\\
-\text{Received for Sell} &= 20*(\$99.99) + 10*(\$99.98) + 10*(\$99.97) + 5*(\$99.96) + 5*(\$99.90)\\
+\text{Received for Sell} &= 20*(\$99.99) + 10*(\$99.98)\\
+&+ 10*(\$99.97) + 5*(\$99.96) + 5*(\$99.90)\\
 &= \$4998.60\\\\
 \text{Received Per Share } &= \frac{4998.6}{50}\\
 &= \$99.972\\\\
@@ -105,6 +106,6 @@ Now, imagine instead of 50 shares, it was 1000 shares, or even 100,000 shares, a
 
 
 
- ### Coming soon for this article: 
+### Coming soon for this article: 
 1. Orderbook Imbalance 
 6. Queues and priorities
