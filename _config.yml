@@ -5,7 +5,7 @@ show_downloads: true
 google_analytics:
 markdown: kramdown
 theme: jekyll-theme-minimal
-roadmaplogo: /mmrm.png
+roadmaplogo: /mmrm.PNG
 qbooklogo: /qblogo1.JPG
 about: /aboutme.md
 rmdescription: A Resource for Introductory Market Making and Market Microstructure Theory
