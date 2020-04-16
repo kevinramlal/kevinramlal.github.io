@@ -7,18 +7,17 @@ This site serves as collection of projects related to the field of market making
 
 ## [![QBLOGO](qblogo1.JPG)](https://kevinramlal.github.io/project_index.html)
 
-A python based limit orderbook simulator. 
+A python based limit orderbook simulator. Discover orderbook mechanics through an easy-to-use GUI with customizable settings, and built-in market making algorithm. 
 
-<br/><br/> 
-
+<hr>
+<br/>
 
 
 ## [![MMRPLOGO](mmrm.PNG)](https://kevinramlal.github.io/articles_index.html)
 
 A series of articles and resources designed to provide a high-level overview of basic theories in market-making, market microstructure, and trading. The goal is to provide a *roadmap* for the reader to dive further into more advanced topics within the world of market-making. 
 
+<hr>
+<br/>
 
-
-
-
-#### [About Me](aboutme.md)
+###[About Me](aboutme.md)
