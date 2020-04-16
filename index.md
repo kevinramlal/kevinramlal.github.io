@@ -13,3 +13,4 @@ A series of articles and resources designed to provide a high-level overview of 
 A python based limit orderbook simulator. 
 
 
+##### [About Me](aboutme.md)
