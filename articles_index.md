@@ -1,9 +1,7 @@
 ---
 layout: default_articles
 ---
-[Kevin Ramlal Homepage](https://kevinramlal.github.io)
-
-# Market Making RoadMap Overview
+# Overview
 
 0. [Introducing the Roadmap](./Articles/about_roadmap.md)
 

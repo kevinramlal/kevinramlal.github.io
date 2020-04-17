@@ -1,5 +1,6 @@
 ---
 layout: default_articles
+mathjax: true
 ---
 [Roadmap Homepage](../articles_index.md)
 
@@ -8,7 +9,7 @@ layout: default_articles
 
 ![wave](wave.jpg)
 *The Great Wave off the Coast of Kanagawa, Katsushika Hokusai (1831)*
-
+<hr>
 
 I start off with a strange tale that a wise colleague once shared with me. 
 Imagine it's the middle of the day, you're standing on Bay St. (Toronto's Wall Street) and you are trying to sell a Rolex. You'd probably get the job done, and at a decent price too! Now, try doing the same thing at three in the morning...
@@ -19,7 +20,7 @@ Secondly, we were able to sell our Rolex both quickly and for a good price durin
 
 Tying this to our previous article where we introduced bid-ask spreads, we would imagine that securities that trade in liquid markets would have tight (small) spreads, and securities that trade in illiquid markets would have wide spreads. 
 
-One of the best textbook resources, that I will frequently reference throughout these articles is "Market Liquidity" by Foucal, Pagano, and Roel (FPR) *Add Amazon Link*
+One of the best textbook resources, that I will frequently reference throughout these articles is "Market Liquidity" by Foucault, Pagano, and Roel (FPR) 
 
 ### So, why should you care about Market Liquidity? 
 
@@ -65,7 +66,7 @@ Once you have the VWAP, you can use this as a benchmark price - thus if your
 
 #### Roll's Measure
 
-A metric based entirely on trade data, invented by Richard Roll in 1984 (reference). Roll exploits a concept known as the bid-ask bounce, which state that transactions bounce back and forth around the mid-quote by hitting the bid and ask prices randomly, resulting in negative serial correlation between transacted prices.
+A metric based entirely on trade data, invented by Richard Roll in 1984 (see references below). Roll exploits a concept known as the bid-ask bounce, which state that transactions bounce back and forth around the mid-quote by hitting the bid and ask prices randomly, resulting in negative serial correlation between transacted prices.
 
 ![Bid-Ask Bounce](bid_ask_bounce.png)
 *Bid-Ask Bounce, Roll 1974*
@@ -90,4 +91,8 @@ In essence, microstructure seeks to answer the question, "How is a price determi
 
 In the upcoming articles, we look at concepts in the price-discovery process, limit order books, and market making, keep in mind that all of these falls under the umbrella of market microstructure! 
 
-*to do: Add references*
+<hr>
+### References
+- [Market Liquidity - Foucault, Pagano, Roell](https://www.amazon.com/Market-Liquidity-Theory-Evidence-Policy/dp/0199936242/ref=sr_1_1?ie=UTF8&qid=1403267477&sr=8-1&keywords=Market+Liquidity%3A+Theory%2C+Evidence%2C+and+Policy)
+- [Roll, 1984, "A Simple Implicit Measure of the Effective Bid-Ask Spread in an Efficient Market"](https://www.bauer.uh.edu/rsusmel/phd/roll1984.pdf)
+-  [Market Microstructure Theory - Maureen O'Hara](https://www.amazon.com/Market-Microstructure-Theory-Maureen-OHara/dp/0631207619/ref=sr_1_3?dchild=1&keywords=market+microstructure&qid=1587098819&sr=8-3)

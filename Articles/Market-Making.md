@@ -2,9 +2,6 @@
 layout: default_articles
 mathjax: true
 ---
-[Roadmap Homepage](../articles_index.md)
-
-
 # What Is A Market Maker?
 *A market maker is an intermediary who facilitates the buying and selling of a security by quoting the prices and volumes at which they are willing to buy and sell this security at.*
 
@@ -48,5 +45,4 @@ Now that we have a base understanding of what a market maker is and how they mak
 <hr>
 ### References
 [Citadel Securities - What is a Market Maker?](https://youtu.be/KsKsyW5vp6A)
-<hr>
-<div align="right">[Next Article](./Intro-to-Liquidity.md)</div>
+

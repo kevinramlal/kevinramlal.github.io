@@ -124,9 +124,14 @@ $$
 Where S represents the spread. **In conclusion**, the Glosten-Milgrom model is a very simple, but powerful model that shows how one can go from a basic set of assumptions about the market maker and trader behaviour, and end with a closed form model to determine bids and asks! 
 -Write about what the equations mean at a high level
 
-Next I will breifly outline a few more models that are much more complex, but will spare the mathematical derivations. If the Glosten Milgrom model was interesting, I urge you to check out Market Liquidity by Thierry Foucalt, Marco Pagaano, Ailsa Roell. 
+Next I will briefly outline a few more models that are much more complex, but will spare the mathematical derivations. If the Glosten Milgrom model was interesting, I urge you to check out Market Liquidity by Thierry Foucalt, Marco Pagaano, Ailsa Roell. 
 
 - Kyles Model, description only 
 - Ho-Stoll description and result
 - Amihud Medelson
 - Inventory Models
+
+<hr>
+### References
+- [Glosten, Milgrom, 1985, "Bid, ask and transaction prices in a specialist market with heterogeneously informed traders](https://www.sciencedirect.com/science/article/abs/pii/0304405X85900443y)
+
