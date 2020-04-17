@@ -21,24 +21,18 @@ layout: default_articles
 - Glosten-Milgrom
 - Kyle (IPR)
 - Ho Stoll (IPR)
-- Amihud-Medelson
+- Amihud-Medelson (IPR)
 
 4. [Introduction to Limit Order Books](./Articles/intro-to-lob.md)
 - Depth
-- Imbalance
-- Queue Priorities
+- Imbalance (IPR)
+- Queue Priorities (IPR)
 
-5. Execution Strategies (IPR)
-- Almgren and Chriss
-- Guo 
-- VWAP
-- TWAP
-
-6. Mathematical Underpinnings of Market Making (IPR)
+5. Mathematical Underpinnings of Market Making (IPR)
 - Probability
 - Time Series
 - Control Theory
 
 
-7. Python simulation of a Market (IPR)
+6. Python simulation of a Market (IPR)
 - Can we simulate a market + market maker

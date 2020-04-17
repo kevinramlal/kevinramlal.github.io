@@ -10,7 +10,7 @@ mathjax: true
 
 ![Canyon](amsterdam2.jpg)
 *Canal in Amsterdam, Claude Oscar Monet (1874)*
-
+<hr>
 A market maker is one who makes markets.
 
 To me, the more important question lies in understanding what it means to "make a market", or even further, "what is a market?". A market is a place where goods are bought and sold. To "make a market" means to provide the prices at which you are willing to buy and sell said goods at. Thus, market-makers are people who make markets by setting these prices. The concept of market-making can be traced back to pre-modern era markets, where instead of company's stocks - the goods would be things like food or materials! 
@@ -45,5 +45,8 @@ This is what is called the Spread, and it is one of the main ways in which marke
 So how do market makers make money off of the Spread? Specifically, the mechanics of our thought experiment are reversed for market makers, meaning that they receive the Ask and pay the Bid, resulting in a profit of \$ 0.10 from doing the exact actions as above. Now, at first it seems like market-makers can NEVER lose money! However, there are a variety of risks that market makers take on for doing this. Further, it's important to understand HOW market makers are able to receive this spread, and how this spread is created in the first place. 
 
 Now that we have a base understanding of what a market maker is and how they make money, we need to understand more about the mechanics of the markets we operate in. There are a lot of thought avenues to embark on next, but I believe the most sensible next step is to dissect what is known as *liquidity*, as this concept captures MUCH of what drives markets and the field of market making.
-
-
+<hr>
+### References
+[Citadel Securities - What is a Market Maker?](https://youtu.be/KsKsyW5vp6A)
+<hr>
+<div align="right">[Next Article](./Intro-to-Liquidity.md)</div>
