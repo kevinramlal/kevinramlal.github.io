@@ -2,14 +2,12 @@
 layout: default_articles
 mathjax: true
 ---
-[Roadmap Homepage](../articles_index.md)
-
 #  Introduction to Limit Order Books 
 *Limit Order Books (Order Books, or LOB) are collection of outstanding limit orders to buy and sell a security on a particular venue. The LOB plays a crucial role in the execution of trades, price-discovery, and is the centre of a variety of market-making strategies.*
 
 ![Canyon](canyon.jpg)   
 *The Grand Canyon of the Yellowstone, Thomas Moran (1872)*
-
+<hr>
 
 In previous articles, we discussed the bid-ask spread, and how this spread is determed by the use of limit orders set by market-makers. Let's set up a quick example, stock XYZ has the current quote: MID 100, BID 99.99, ASK 100.01. What's missing here is the volume available at the Bid, and Ask. In terms of limit-orders, let's assume there a limit-order to Buy 10 shares at a price of 99.99, and a limit-order to Sell 25 shares at a price of 100.01. We can represent this in a simple *limit order book* display as follows. 
 
@@ -100,7 +98,7 @@ $$
 \end{align*}
 $$
 
-In this example, we see that we have price impacts on both sides of our trades, where we paid 100.015 per share for our buy market order and recieved 99.972 per share for our sell market order. We note that the price impact on our sell order was greater than the price impact than our buy order (think of impact as difference from original bid/ask). We note that the spread paid per share is roughly $0.04 as opposed to our original example where the bid-ask spread was $0.01! 
+In this example, we see that we have price impacts on both sides of our trades, where we paid 100.015 per share for our buy market order and recieved 99.972 per share for our sell market order. We note that the price impact on our sell order was greater than the price impact than our buy order (think of impact as difference from original bid/ask). We note that the spread paid per share is roughly 0.04 as opposed to our original example where the bid-ask spread was 0.01! 
 
 Now, imagine instead of 50 shares, it was 1000 shares, or even 100,000 shares, as is often the case with institutional traders (banks/pension plans/hedge funds etc). It's clear why understanding limit-order book dynamics is imperative for ensuring that your trade is executed in a timely, and cost efficient manner. In another article, I will discuss more sophisticated execution strategies. 
 

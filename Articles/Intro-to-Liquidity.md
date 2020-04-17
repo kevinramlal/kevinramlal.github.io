@@ -2,8 +2,6 @@
 layout: default_articles
 mathjax: true
 ---
-[Roadmap Homepage](../articles_index.md)
-
 ## Introduction to Liquidity and Market Microstructure 
 *Liquidity is the ability to buy and sell securities quickly, and relatively small price impact.*
 

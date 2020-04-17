@@ -2,14 +2,13 @@
 layout: default_articles
 mathjax: true
 ---
-[Roadmap Homepage](../articles_index.md)
 
 #  Price Discovery Process 
 *Price discovery is the process in which a securities' price is determined through the interactions and mechanisms in a marketplace.* 
 
 ![CHECKERS](checkers.jpg)
 *Checkers, Normal Rockwell (1928)*
-
+<hr>
 
 In the previous article about Liquidity and Microstructure, we introduced microstructure as the study of how prices are formed. The process of prices being formed is called the price-discovery process, and it is one of the main functions of a marketplace! What goes into the price discovery process in reality is incredibly complex, as it involves the minute details of specific exchanges, the type of traders who are trading, the availble public (or even private) news, and much more. 
 
