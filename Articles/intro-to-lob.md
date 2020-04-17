@@ -11,7 +11,7 @@ mathjax: true
 *The Grand Canyon of the Yellowstone, Thomas Moran (1872)*
 
 
-In previous articles, we discussed the bid-ask spread, and how this spread is determed by the use of limit orders set by market-makers. Let's set up a quick example, stock XYZ has the current quote: MID: \$100, BID: \$99.99, ASK: \$100.01. What's missing here is the volume available at the Bid, and Ask. In terms of limit-orders, let's assume there a limit-order to Buy 10 shares at a price of 99.99, and a limit-order to Sell 25 shares at a price of 100.01. We can represent this in a simple *limit order book* display as follows. 
+In previous articles, we discussed the bid-ask spread, and how this spread is determed by the use of limit orders set by market-makers. Let's set up a quick example, stock XYZ has the current quote: MID 100, BID 99.99, ASK 100.01. What's missing here is the volume available at the Bid, and Ask. In terms of limit-orders, let's assume there a limit-order to Buy 10 shares at a price of 99.99, and a limit-order to Sell 25 shares at a price of 100.01. We can represent this in a simple *limit order book* display as follows. 
 
 *XYZ -Top of Book*
 
@@ -47,14 +47,14 @@ The market order was completely filled! However we note the following:
 
 $$
 \begin{align*}
-\text{Received from Market Sell} &= 10*(\$99.99) + 5*(\$99.98)\\
-&= \$1499.80\\\\
+\text{Received from Market Sell} &= 10*(99.99) + 5*(99.98)\\
+&= 1499.80\\\\
 \text{Received Per Share } &= \frac{1499.8}{15}\\
-&= \$99.987
+&= 99.987
 \end{align*}
 $$
 
-Thus the price per share recieved for this market order was not the Bid of \$99.99 as in the quote, but rather \$99.987 which is slightly lower! Further more our book now looks like:
+Thus the price per share recieved for this market order was not the Bid of 99.99 as in the quote, but rather 99.987 which is slightly lower! Further more our book now looks like:
 
 | Bid Volume | Bid Price | Ask Price | Ask Volume |
 |:----------:|:---------:|:---------:|:----------:|
@@ -63,7 +63,7 @@ Thus the price per share recieved for this market order was not the Bid of \$99.
 |     -     |   -  |   100.10  |     1     |
 
 
-From the book, the new mid price is \$99.995, which is lower than the previous mid! This simple example engenders two very important mechanics of markets.
+From the book, the new mid price is 99.995, which is lower than the previous mid! This simple example engenders two very important mechanics of markets.
 
 1. Larger market orders have a price impact, meaning that the price per share received/paid is *worse* than the current quote.
 2. Market orders to buy(sell) will result in a lower(higher) mid price, all else being constant. 
@@ -81,26 +81,26 @@ First we reset the book:
 |     5     |   99.90   |   100.10  |     25     |
 |     1     |   99.00   |   -  |     -     |
 
-Again, the quote is MID \$100.00, BID: \$99.99, ASK: \$100.01.
+Again, the quote is MID 100.00, BID: 99.99, ASK: 100.01.
 You are now going to buy, and then sell 50 shares immediately. Let's calculate the cashflows.
 
 $$
 \begin{align*}
-\text{Paid for Buy} &= 25*(\$100.01) + 25*(\$100.02)\\
-&= \$5000.75\\\\
+\text{Paid for Buy} &= 25*(100.01) + 25*(100.02)\\
+&= 5000.75\\\\
 \text{Paid Per Share } &= \frac{5000.75}{50}\\
-&= \$100.015\\\\
-\text{Received for Sell} &= 20*(\$99.99) + 10*(\$99.98)\\
-&+ 10*(\$99.97) + 5*(\$99.96) + 5*(\$99.90)\\
-&= \$4998.60\\\\
+&= 100.015\\\\
+\text{Received for Sell} &= 20*(99.99) + 10*(99.98)\\
+&+ 10*(99.97) + 5*(99.96) + 5*(99.90)\\
+&= 4998.60\\\\
 \text{Received Per Share } &= \frac{4998.6}{50}\\
-&= \$99.972\\\\
+&= 99.972\\\\
 \text{Spread per Share} &= 100.015 - 99.972\\
 &= 0.043
 \end{align*}
 $$
 
-In this example, we see that we have price impacts on both sides of our trades, where we paid \$100.015 per share for our buy market order and recieved \$99.972 per share for our sell market order. We note that the price impact on our sell order was greater than the price impact than our buy order (think of impact as difference from original bid/ask). We note that the spread paid per share is roughly $0.04 as opposed to our original example where the bid-ask spread was $0.01! 
+In this example, we see that we have price impacts on both sides of our trades, where we paid 100.015 per share for our buy market order and recieved 99.972 per share for our sell market order. We note that the price impact on our sell order was greater than the price impact than our buy order (think of impact as difference from original bid/ask). We note that the spread paid per share is roughly $0.04 as opposed to our original example where the bid-ask spread was $0.01! 
 
 Now, imagine instead of 50 shares, it was 1000 shares, or even 100,000 shares, as is often the case with institutional traders (banks/pension plans/hedge funds etc). It's clear why understanding limit-order book dynamics is imperative for ensuring that your trade is executed in a timely, and cost efficient manner. In another article, I will discuss more sophisticated execution strategies. 
 
